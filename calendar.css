@@ -1,0 +1,21 @@
+:root{
+  --bg:#f7f7f9;
+  --card:#ffffff;
+  --accent:#2b6cb0;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);margin:0;padding:32px;display:flex;align-items:center;justify-content:center;height:100vh}
+.calendar{background:var(--card);border-radius:8px;box-shadow:0 6px 20px rgba(16,24,40,0.08);width:340px;padding:16px}
+.cal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.cal-header h2{font-size:16px;margin:0;color:#111827}
+button{background:transparent;border:0;color:var(--accent);font-size:20px;cursor:pointer;padding:6px}
+.weekdays{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;color:var(--muted);font-size:12px;margin-bottom:6px}
+.weekday{text-align:center;font-size:12px;padding:6px 0}
+.selected-day{background:var(--accent);color:#fff;border-radius:6px}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.day{padding:10px;text-align:center;border-radius:6px;cursor:pointer;color:#111827}
+.day:hover{background:#eef2ff}
+.other{color:#9ca3af}
+.today{border:1px solid var(--accent);color:var(--accent)}
+.selected{margin-top:12px;font-size:14px;color:#374151}

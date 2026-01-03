@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Simple Calendar</title>
+  <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+  <div class="calendar">
+    <header class="cal-header">
+      <button id="prev" aria-label="Previous month">‹</button>
+      <h2 id="monthYear"></h2>
+      <button id="next" aria-label="Next month">›</button>
+    </header>
+    <div class="weekdays" role="row">
+      <div class="weekday">Sun</div>
+      <div class="weekday">Mon</div>
+      <div class="weekday">Tue</div>
+      <div class="weekday">Wed</div>
+      <div class="weekday">Thu</div>
+      <div class="weekday">Fri</div>
+      <div class="weekday">Sat</div>
+    </div>
+    <div id="days" class="days" role="grid"></div>
+    <div id="selected" class="selected" aria-live="polite"></div>
+  </div>
+  <script src="calendar.js"></script>
+</body>
+</html>
